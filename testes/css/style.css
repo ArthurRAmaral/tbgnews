@@ -65,8 +65,8 @@ Responsividade
         transition: all .2s;
     }
     #principal {
-        width: 300px;
-        left: -300px;
+        width: 250px;
+        left: -250px;
     }
     ul {
         list-style: none;
@@ -102,13 +102,13 @@ Responsividade
         display: block;
     }
     #chk:checked~#principal {
-        transform: translateX(300px);
+        transform: translateX(250px);
     }
     #chk:checked~.slide {
-        transform: translateX(300px);
+        transform: translateX(250px);
     }
-    #chk:checked~header img {
-        transform: translateX(300px);
+    #chk:checked~header .slide img {
+        transform: translateX(250px);
     }
     .logo-topo {
         display: inline;
