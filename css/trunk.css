@@ -164,7 +164,7 @@ nav li a:hover {
 	height: 300px;
 	margin: 10px;
 	padding: 20px;
-	border: 3px ;
+	border: 3px;
 	background-color: #2e2e2e;
 	display: inline-block;
 	max-block-size: 300;
@@ -190,7 +190,7 @@ nav li a:hover {
 
 .news-textp {
 	padding: 0px 100px;
-} 
+}
 
 .news-text {
 	display: inline-flex;
@@ -233,11 +233,10 @@ nav li a:hover {
 .news2-tab img {
 	display: block;
 	margin: 12.5px;
-	
 }
 
 .logo-topo {
-	padding:7px;
+	padding: 7px;
 	padding-left: 150px;
 }
 
@@ -297,6 +296,9 @@ nav li a:hover {
 	}
 	.header-section {
 		margin-top: 60px;
+	}
+	.logo-topo {
+		padding: 8px;
 	}
 	/* NAVIGATION ANNIMATION */
 	nav {
