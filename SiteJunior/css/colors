@@ -1,0 +1,41 @@
+/* Color Theme Swatches in Hex */
+.hair-1-hex { color: #33332F; }
+.hair-2-hex { color: #313232; }
+.hair-3-hex { color: #402C22; }
+.hair-4-hex { color: #50402D; }
+.hair-5-hex { color: #2F2D2B; }
+
+/* Color Theme Swatches in RGBA */
+.hair-1-rgba { color: rgba(51, 51, 47, 1); }
+.hair-2-rgba { color: rgba(49, 49, 49, 1); }
+.hair-3-rgba { color: rgba(63, 43, 33, 1); }
+.hair-4-rgba { color: rgba(80, 63, 45, 1); }
+.hair-5-rgba { color: rgba(47, 45, 42, 1); }
+
+/* Color Theme Swatches in HSLA */
+.hair-1-hsla { color: hsla(60, 4, 19, 1); }
+.hair-2-hsla { color: hsla(180, 1, 19, 1); }
+.hair-3-hsla { color: hsla(20, 30, 19, 1); }
+.hair-4-hsla { color: hsla(32, 27, 24, 1); }
+.hair-5-hsla { color: hsla(30, 4, 17, 1); }
+
+/* Color Theme Swatches in Hex */
+.Hair-Shades-1-hex { color: #B29F96; }
+.Hair-Shades-2-hex { color: #726660; }
+.Hair-Shades-3-hex { color: #332E2B; }
+.Hair-Shades-4-hex { color: #332E2B; }
+.Hair-Shades-5-hex { color: #262220; }
+
+/* Color Theme Swatches in RGBA */
+.Hair-Shades-1-rgba { color: rgba(177, 159, 149, 1); }
+.Hair-Shades-2-rgba { color: rgba(114, 102, 96, 1); }
+.Hair-Shades-3-rgba { color: rgba(51, 45, 42, 1); }
+.Hair-Shades-4-rgba { color: rgba(51, 45, 42, 1); }
+.Hair-Shades-5-rgba { color: rgba(38, 33, 31, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Hair-Shades-1-hsla { color: hsla(20, 15, 64, 1); }
+.Hair-Shades-2-hsla { color: hsla(19, 8, 41, 1); }
+.Hair-Shades-3-hsla { color: hsla(19, 8, 18, 1); }
+.Hair-Shades-4-hsla { color: hsla(19, 8, 18, 1); }
+.Hair-Shades-5-hsla { color: hsla(19, 8, 13, 1); }
