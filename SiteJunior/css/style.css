@@ -339,13 +339,13 @@ ul {
         margin: 0 auto;
         margin-top: 20px;
         position: relative;
-        width: 90%;
         height: 0;
-        padding-bottom: 90%;
         user-select: none;
         background-color: #1c1c1c;
-        border: solid 10px #212121;
         border-radius: 10px;
+        border: none;
+        width: 95%;
+        padding-bottom: 57%;
     }
     .container .slide_img {
         position: absolute;
@@ -381,6 +381,7 @@ ul {
         left: 39%;
         padding: center;
         transform: translateY(-50%);
+        font-size: 50pt;
     }
     .prev:hover, .next:hover {
         transition: .3s;
@@ -431,14 +432,7 @@ ul {
         }
     }
     @media screen and (max-width: 780px) {
-        .container {
-            border: none;
-            width: 95%;
-            height: 0;
-            padding-bottom: 57%;
-        }
         label span {
-            font-size: 50pt;
         }
         .prev, .next {
             width: 15%;
@@ -454,7 +448,7 @@ ul {
     .header-section {
         background-color: #323232;
     }
-    .intro  {
+    .intro {
         padding: 40px 25px 50px 25px;
         background-color: #121212;
     }
