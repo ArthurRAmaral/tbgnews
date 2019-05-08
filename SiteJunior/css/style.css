@@ -178,9 +178,9 @@ ul {
     }
     .container {
         border: none;
-        width: 45%;
+        width: 75%;
         height: 0;
-        padding-bottom: 28%;
+        padding-bottom: 43%;
     }
     label span {
         font-size: 50pt;
@@ -197,6 +197,9 @@ ul {
     }
     .header-section {
         background-color: #323232;
+    }
+    .header-section h1 {
+        font-size: 25px
     }
     .body-section {
         background-color: #323232;
@@ -450,7 +453,27 @@ ul {
     }
     .header-section {
         background-color: #323232;
-        margin-bottom: 0px 25px;
+    }
+    .intro  {
+        padding: 40px 25px 50px 25px;
+        background-color: #121212;
+    }
+    .intro h1 {
+        font-weight: 600;
+        font-size: 25pt;
+        padding-bottom: 10px
+    }
+    .intro p {
+        width: 100%;
+        font-size: 150%;
+        padding-bottom: 25px;
+    }
+    .intro h2 {
+        display: inline;
+        padding: 10px;
+        font-size: 12px;
+        font-weight: 700;
+        background-color: #0d7377
     }
     .body-section {
         background-color: #323232;
