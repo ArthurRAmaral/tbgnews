@@ -339,11 +339,12 @@ ul {
         margin: 0 auto;
         position: relative;
         height: 0;
+        top: .5px;
         user-select: none;
         background-color: #1c1c1c;
         border-radius: 10px;
         border: none;
-        width: 95%;
+        width: 100%;
         padding-bottom: 57%;
     }
     .container .slide_img {
@@ -430,7 +431,7 @@ ul {
             opacity: 1;
         }
     }
-    .section, .header-section, .body-section, .footer-section {
+    .section, .body-section, .footer-section {
         padding: 20px 10px;
         margin: 0;
     }
@@ -440,7 +441,7 @@ ul {
     .intro {
         padding: 20px 20px 30px 20px;
         background-color: #121212;
-        border-bottom: solid 2px #14ffebc5;
+        border-bottom: solid 2px #14ffec;
     }
     .intro h1 {
         font-weight: 600;
@@ -454,7 +455,7 @@ ul {
     }
     .intro h2 {
         display: inline;
-        padding: 10px 12px;
+        padding: 10px;
         font-size: 16px;
         font-weight: 700;
         background-color: #0d7377;
@@ -462,11 +463,13 @@ ul {
     .body-section {
         background-color: #232323;
         text-align: center;
+        border-top: solid 2px #14ffec;
+        margin-top: .5px;
     }
     .body-section h1 {
         font-size: 20px;
         text-align: center;
-        margin: 5px;
+        margin: 0px 5px 5px 5px;
         font-weight: 600;
     }
     .body-section p {
