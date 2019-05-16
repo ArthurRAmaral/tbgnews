@@ -1,0 +1,8 @@
+Estoque:
+- Id;
+- Nome do produto;
+- Categoria;
+- Quantidade;
+- Preço;
+- Descrição;
+- Foto.
