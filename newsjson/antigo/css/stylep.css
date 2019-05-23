@@ -1,0 +1,46 @@
+/*
+GERAK
+*/
+
+body {
+    font-size: 12pt;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #4d4d4d;
+    background-color: rgb(228, 228, 228)
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+/*
+HEARDER
+*/
+
+header {
+    background-color: #4d4d4d;
+}
+
+/*
+NAV
+*/
+
+nav {
+    list-style: none;
+    width: 700;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #f1f1f1;
+    padding: 3px;
+    margin: 3px;
+}
