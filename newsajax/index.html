@@ -13,7 +13,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/TBG logo.png" />
-    <script src="js/jsonnews.js"></script>
 </head>
 
 <body>
@@ -49,7 +48,9 @@
             </div>
         </div>
 
-        <div class="body-section" id="lista-news"></div>
+        <center><button onclick="getData()" style="color: black;margin: 20px;">NEWS</button></center>
+
+        <div class="body-section" id="lista-news">
         </div>
 
         <div class="footer-section">
@@ -88,11 +89,23 @@
 
 
     <script>
-        var news = '';
-        for (i=0;i<dbnews.data.length;i++) {
-            news += `<a href="${ dbnews.data[i].link }"><div class="news"><h2>${ dbnews.data[i].type }</h2><img src="${ dbnews.data[i].img }" alt="" id="N1"><h3>${ dbnews.data[i].title }</h3><p>${ dbnews.data[i].text }</p><h1>${ dbnews.data[i].date }</h1></div></a>`
+        var req = new XMLHttpRequest();
+        var url = 'https://newsapi.org/v2/top-headlines?country=br&category=general&apiKey=83d04c23f8d343ca878bd6c70616877e';
+        
+        function processData() {
+            dbnews = JSON.parse(req.responseText);
+            var news = '';
+            for (i = 0; i < dbnews.articles.length; i++) {
+                news += `<a href="${dbnews.articles[i].url}"><div class="news"><h2>${dbnews.articles[i].author}</h2><img src="${dbnews.articles[i].urlToImage}" alt="" id="N1"><h3>${dbnews.articles[i].title}</h3><p>${dbnews.articles[i].description}</p><h1>${dbnews.articles[i].publishedAt}</h1></div></a>`
+            }
+            document.getElementById('lista-news').innerHTML = news;
         }
-        document.getElementById('lista-news').innerHTML = news;
+
+        function getData() {
+            req.onload = processData;
+            req.open('GET', url, true);
+            req.send();
+        }
 
     </script>
 </body>
