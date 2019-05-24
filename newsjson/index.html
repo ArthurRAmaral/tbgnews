@@ -89,8 +89,17 @@
 
     <script>
         var news = '';
-        for (i=0;i<dbnews.data.length;i++) {
-            news += `<a href="${ dbnews.data[i].link }"><div class="news"><h2>${ dbnews.data[i].type }</h2><img src="${ dbnews.data[i].img }" alt="" id="N1"><h3>${ dbnews.data[i].title }</h3><p>${ dbnews.data[i].text }</p><h1>${ dbnews.data[i].date }</h1></div></a>`
+        for (i = 0; i < dbnews.data.length; i++) {
+            news += 
+            `<a href="${dbnews.data[i].link}">
+                <div class="news">
+                    <h2>${ dbnews.data[i].type}</h2>
+                    <img src="${ dbnews.data[i].img}" alt="" id="N1">
+                    <h3>${ dbnews.data[i].title}</h3>
+                    <p>${ dbnews.data[i].text}</p>
+                    <h1>${ dbnews.data[i].date}</h1>
+                </div>
+            </a>`
         }
         document.getElementById('lista-news').innerHTML = news;
 

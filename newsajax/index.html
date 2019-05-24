@@ -96,7 +96,16 @@
             dbnews = JSON.parse(req.responseText);
             var news = '';
             for (i = 0; i < dbnews.articles.length; i++) {
-                news += `<a href="${dbnews.articles[i].url}"><div class="news"><h2>${dbnews.articles[i].author}</h2><img src="${dbnews.articles[i].urlToImage}" alt="" id="N1"><h3>${dbnews.articles[i].title}</h3><p>${dbnews.articles[i].description}</p><h1>${dbnews.articles[i].publishedAt}</h1></div></a>`
+                news +=
+                `<a href="${dbnews.articles[i].url}">
+                    <div class="news">
+                        <h2>${dbnews.articles[i].author}</h2>
+                        <img src="${dbnews.articles[i].urlToImage}" alt="" id="N1">
+                        <h3>${dbnews.articles[i].title}</h3>
+                        <p>${dbnews.articles[i].description}</p>
+                        <h1>${dbnews.articles[i].publishedAt}</h1>
+                    </div>
+                </a>`
             }
             document.getElementById('lista-news').innerHTML = news;
         }
