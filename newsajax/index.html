@@ -30,7 +30,7 @@
     <nav class="menu slide" id="principal">
         <ul>
             <li><a href="" class="act">Home</a></li>
-            <li><a href="#">Esportes</a></li>
+            <li><a href="#" onclick="qvalor('bolsonaro')" id="esporte" class="">Esportes</a></li>
             <li><a href="#">Política</a></li>
             <li><a href="#">TEC</a></li>
             <li><a href="#">Educação</a></li>
@@ -88,14 +88,30 @@
 
     <script>
         var req = new XMLHttpRequest();
-        var url = 'https://newsapi.org/v2/top-headlines?country=br&category=general&apiKey=83d04c23f8d343ca878bd6c70616877e';
-        
+        var uri = 'https://newsapi.org/v2/top-headlines?';
+        var parametros = {
+            data:
+                [
+                    'country=br',
+                    'category=general',
+                    'apiKey=83d04c23f8d343ca878bd6c70616877e',
+                    'q='
+                ]
+        }
+        var parametrosprontos = '';
+        for (i = 0; i < parametros.data.length; i++) {
+            parametrosprontos = parametrosprontos + parametros.data[i];
+            if (i < (parametros.data.length - 1)) {
+                parametrosprontos += '&';
+            }
+        }
+        var url = uri + parametrosprontos;
         function processData() {
             dbnews = JSON.parse(req.responseText);
             var news = '';
             for (i = 0; i < dbnews.articles.length; i++) {
                 news +=
-                `<a href="${dbnews.articles[i].url}">
+                    `<a href="${dbnews.articles[i].url}">
                     <div class="news">
                         <img src="${dbnews.articles[i].urlToImage}" alt="" id="N1">
                         <h3>${dbnews.articles[i].title}</h3>
@@ -105,6 +121,29 @@
                 </a>`
             }
             document.getElementById('lista-news').innerHTML = news;
+        }
+
+        function qvalor(valor) {
+            var req = new XMLHttpRequest();
+            var uri = 'https://newsapi.org/v2/top-headlines?';
+            var parametros = {
+                data:
+                    [
+                        'country=br',
+                        'category=general',
+                        'apiKey=83d04c23f8d343ca878bd6c70616877e',
+                        'q=' + valor
+                    ]
+            }
+            var parametrosprontos = '';
+            for (i = 0; i < parametros.data.length; i++) {
+                parametrosprontos = parametrosprontos + parametros.data[i];
+                if (i < (parametros.data.length - 1)) {
+                    parametrosprontos += '&';
+                }
+            }
+            getData();
+            document.getElementById(valor).classList.add("act");
         }
 
         function getData() {
