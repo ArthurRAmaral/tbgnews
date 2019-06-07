@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="img/TBG logo.png" />
 </head>
 
-<body>
+<body onload="getData()">
 
     <input type="checkbox" id="chk">
 
@@ -47,8 +47,6 @@
                 <a href="#"><img src="https://s.adroll.com/a/QST/QFZ/QSTQFZV56ZFPLMS3BWF6RS.gif" alt="ADS"></a>
             </div>
         </div>
-
-        <center><button onclick="getData()" style="color: black;margin: 20px;">NEWS</button></center>
 
         <div class="body-section" id="lista-news">
         </div>
@@ -99,7 +97,6 @@
                 news +=
                 `<a href="${dbnews.articles[i].url}">
                     <div class="news">
-                        <h2>${dbnews.articles[i].author}</h2>
                         <img src="${dbnews.articles[i].urlToImage}" alt="" id="N1">
                         <h3>${dbnews.articles[i].title}</h3>
                         <p>${dbnews.articles[i].description}</p>
